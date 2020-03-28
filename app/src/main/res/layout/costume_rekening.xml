@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_card_bg"
+        android:padding="15dp">
+        <View
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:background="#fff"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:id="@+id/cr_nomor_rekening"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="XXXX XXXX XXXX XXXX"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:id="@+id/cr_nama_bank"
+                android:layout_height="wrap_content"
+                android:text="Nama Bank"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:id="@+id/cr_nama_pemilik"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="Nama Pemilik"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:background="#fff"/>
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+</FrameLayout>

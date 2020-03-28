@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/header_top"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="SETTING"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_centerHorizontal="true"
+      android:layout_gravity="center"
+      android:layout_marginTop="110dp"
+      android:layout_below="@+id/setting_foto"
+      android:background="@drawable/form_radius_top_radius_white">
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:layout_below="@+id/header_top"
+          android:layout_centerHorizontal="true"
+          android:layout_gravity="center"
+          android:layout_marginTop="-50dp"
+          android:id="@+id/setting_foto"
+          app:civ_border_color="@color/colorPrimaryDark"
+          app:civ_border_width="3dp" />
+
+      <androidx.core.widget.NestedScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@id/setting_foto"
+          android:layout_marginTop="25dp"
+          android:paddingLeft="20dp"
+          android:paddingTop="20dp"
+          android:paddingRight="20dp"
+          android:scrollbars="none">
+
+          <androidx.appcompat.widget.LinearLayoutCompat
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+              <androidx.cardview.widget.CardView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:cardBackgroundColor="#fff"
+                  app:cardElevation="5dp"
+                  app:cardUseCompatPadding="true">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:padding="10dp">
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:orientation="vertical">
+
+                          <ImageView
+                              android:padding="5dp"
+                              android:id="@+id/iv_setting_biodata"
+                              android:layout_width="50dp"
+                              android:layout_height="50dp"
+                              android:layout_gravity="center"
+                              android:src="@drawable/ic_user" />
+
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:fontFamily="@font/roboto_medium"
+                              android:gravity="center"
+                              android:text="Pemilik"
+                              android:textColor="@color/colorPrimaryDark"
+                              android:textSize="16sp" />
+                      </LinearLayout>
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:orientation="vertical">
+
+                          <ImageView
+                              android:padding="5dp"
+                              android:id="@+id/iv_setting_toko"
+                              android:layout_width="50dp"
+                              android:layout_height="50dp"
+                              android:layout_gravity="center"
+                              android:src="@drawable/ic_market" />
+
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:fontFamily="@font/roboto_medium"
+                              android:gravity="center"
+                              android:text="Toko"
+                              android:textColor="@color/colorPrimaryDark"
+                              android:textSize="16sp" />
+                      </LinearLayout>
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:orientation="vertical">
+
+                          <ImageView
+                              android:padding="5dp"
+                              android:id="@+id/iv_setting_foto"
+                              android:layout_width="50dp"
+                              android:layout_height="50dp"
+                              android:layout_gravity="center"
+                              android:src="@drawable/ic_photo" />
+
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:fontFamily="@font/roboto_medium"
+                              android:gravity="center"
+                              android:text="Foto"
+                              android:textColor="@color/colorPrimaryDark"
+                              android:textSize="16sp" />
+                      </LinearLayout>
+                  </LinearLayout>
+              </androidx.cardview.widget.CardView>
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/roboto_black"
+                  android:paddingTop="10dp"
+                  android:paddingBottom="10dp"
+                  android:text="Pemilik"
+                  android:textSize="16sp"
+                  android:textStyle="bold" />
+
+              <androidx.appcompat.widget.LinearLayoutCompat
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <androidx.appcompat.widget.LinearLayoutCompat
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="2.4"
+                          android:text="Nama" />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text=" : " />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/tv_setting_nama_pemilik"
+                          android:text="------" />
+                  </androidx.appcompat.widget.LinearLayoutCompat>
+
+                  <androidx.appcompat.widget.LinearLayoutCompat
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="2.4"
+                          android:text="Alamat" />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text=" : " />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/tv_setting_alamat_pemilik"
+                          android:text="------" />
+                  </androidx.appcompat.widget.LinearLayoutCompat>
+
+                  <androidx.appcompat.widget.LinearLayoutCompat
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="2.4"
+                          android:text="Telepon" />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text=" : " />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/tv_setting_telepon_pemilik"
+                          android:text="------" />
+                  </androidx.appcompat.widget.LinearLayoutCompat>
+
+                  <androidx.appcompat.widget.LinearLayoutCompat
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="2.4"
+                          android:text="Email" />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text=" : " />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/tv_setting_email_pemilik"
+                          android:text="------" />
+                  </androidx.appcompat.widget.LinearLayoutCompat>
+              </androidx.appcompat.widget.LinearLayoutCompat>
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/roboto_black"
+                  android:paddingTop="10dp"
+                  android:paddingBottom="10dp"
+                  android:text="Toko Saya"
+                  android:textSize="16sp"
+                  android:textStyle="bold" />
+
+              <androidx.appcompat.widget.LinearLayoutCompat
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <androidx.appcompat.widget.LinearLayoutCompat
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="2.4"
+                          android:text="Nama" />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text=" : " />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/tv_setting_nama_toko"
+                          android:text="------" />
+                  </androidx.appcompat.widget.LinearLayoutCompat>
+
+                  <androidx.appcompat.widget.LinearLayoutCompat
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="2.4"
+                          android:text="Alamat" />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text=" : " />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/tv_setting_alamat_toko"
+                          android:text="------" />
+                  </androidx.appcompat.widget.LinearLayoutCompat>
+
+                  <androidx.appcompat.widget.LinearLayoutCompat
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="2.4"
+                          android:text="Status" />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text=" : " />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/tv_setting_status_toko"
+                          android:text="------" />
+                  </androidx.appcompat.widget.LinearLayoutCompat>
+              </androidx.appcompat.widget.LinearLayoutCompat>
+
+              <androidx.cardview.widget.CardView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="50dp"
+                  app:cardBackgroundColor="#fff"
+                  app:cardElevation="5dp"
+                  app:cardUseCompatPadding="true">
+
+                  <LinearLayout
+                      android:id="@+id/ll_setting_logout"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:padding="10dp">
+
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_weight="1"
+                          android:fontFamily="@font/roboto_medium"
+                          android:gravity="center"
+                          android:text="Keluar Aplikasi"
+                          android:textColor="@color/colorPrimaryDark"
+                          android:textSize="16sp" />
+
+                      <ImageView
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:src="@drawable/ic_logout" />
+                  </LinearLayout>
+              </androidx.cardview.widget.CardView>
+
+          </androidx.appcompat.widget.LinearLayoutCompat>
+
+      </androidx.core.widget.NestedScrollView>
+
+  </LinearLayout>
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

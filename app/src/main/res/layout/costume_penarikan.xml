@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+      <LinearLayout
+          android:padding="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+          <ImageView
+              android:id="@+id/cp_close"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_close_black_24dp"
+              android:layout_marginBottom="10dp"/>
+          <androidx.appcompat.widget.AppCompatTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/roboto_black"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+              android:text="Nomer Rekening"
+              android:textSize="16sp"
+              android:textStyle="bold" />
+
+          <com.google.android.material.circularreveal.CircularRevealFrameLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="6dp"
+              android:background="@drawable/spinner">
+
+              <androidx.appcompat.widget.AppCompatSpinner
+                  android:layout_width="match_parent"
+                  android:id="@+id/cpp_rekening"
+                  android:layout_height="50dp"
+                  android:spinnerMode="dropdown" />
+          </com.google.android.material.circularreveal.CircularRevealFrameLayout>
+
+          <androidx.appcompat.widget.AppCompatTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/roboto_black"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+              android:text="Nominal"
+              android:textSize="16sp"
+              android:textStyle="bold" />
+
+          <com.google.android.material.circularreveal.CircularRevealFrameLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="6dp"
+              android:background="@drawable/spinner">
+
+              <androidx.appcompat.widget.AppCompatEditText
+                  android:padding="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:id="@+id/cpp_nominal"
+                  android:inputType="number"
+                  android:background="#00FFFFFF" />
+          </com.google.android.material.circularreveal.CircularRevealFrameLayout>
+
+          <androidx.appcompat.widget.AppCompatButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:background="@drawable/login"
+              android:id="@+id/cpp_simpan"
+              android:text="Simpan"
+              android:textColor="#fff" />
+
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

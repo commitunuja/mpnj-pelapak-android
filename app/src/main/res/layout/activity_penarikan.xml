@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".view.penarikan">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/header_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/form_radius_bottom_right_left"
+        android:elevation="3dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_penarikan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp_white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Penarikan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                app:fontFamily="@font/roboto_bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/saldo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_top"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/form_radius_bottom_saldo"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="Saldo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="----------"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/bt_pengajuan"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saldo"
+        android:text="Tarik Saldo"
+        android:textColor="#fff"
+        android:background="@drawable/form_radius_right_top_bottom"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/bt_pengajuan"
+        android:id="@+id/rv_tampil_penarikan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

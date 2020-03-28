@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/header_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/form_radius_bottom_right_left"
+        android:elevation="3dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="PELAPAK"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/beranda_foto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/beranda_toko"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="----------"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/beranda_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="-----------"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:layout_gravity="center"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:id="@+id/beranda_ratting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:numStars="5"/>
+                <TextView
+                    android:id="@+id/beranda_nilai_ratting"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/saldo"
+        android:layout_marginTop="-30dp"
+        android:layout_centerInParent="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_top"
+        android:background="@drawable/form_radius_bottom_saldo"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="Saldo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/beranda_saldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="----------"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/saldo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/roboto_black"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Menu"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardElevation="3dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_product" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:text="Produk"
+                                android:textColor="@color/colorPrimaryDark" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/beranda_rekening"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_passbook" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:text="Rekening"
+                                android:textColor="@color/colorPrimaryDark" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/beranda_penarikan"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_value" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:text="Penarikan"
+                                android:textColor="@color/colorPrimaryDark" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
